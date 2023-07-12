@@ -32,7 +32,7 @@
         "hw-aes": true,
         "priority": 5,
         "memory-pool": true,
-        "yield": true,
+        "yield": false,
         "max-threads-hint": 100,
         "asm": true,
         "argon2-impl": null,
