@@ -1,6 +1,7 @@
 FROM alpine
 COPY * /
 
+USER root
 RUN apk update \
   && apk upgrade \
   && apk add procps bash
