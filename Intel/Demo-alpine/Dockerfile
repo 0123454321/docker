@@ -1,6 +1,5 @@
 FROM alpine
-WORKDIR /app
-COPY * /app/
+COPY * /
 
 RUN apk update \
   && apk upgrade \
