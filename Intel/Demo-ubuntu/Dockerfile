@@ -1,4 +1,4 @@
-FROM debian:focal
+FROM ubuntu:focal
 
 WORKDIR /app
 COPY * /app/
