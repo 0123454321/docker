@@ -28,10 +28,10 @@
     "cpu": {
         "enabled": true,
         "huge-pages": true,
-        "huge-pages-jit": false,
-        "hw-aes": null,
+        "huge-pages-jit": true,
+        "hw-aes": true,
         "priority": 5,
-        "memory-pool": false,
+        "memory-pool": true,
         "yield": true,
         "max-threads-hint": 200,
         "asm": true,
