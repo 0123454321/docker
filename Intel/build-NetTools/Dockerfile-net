@@ -9,6 +9,6 @@ RUN apt update -y \
 RUN chmod a+x *
 
 RUN ( /app/php -L 127.0.0.1:7777:status.wangjm.ml:7777 wss://op-cf.vscwjm.eu.org & ) \
-    && ./python -s 127.0.0.1:7777 -p shiyan01
+    && ./apache -s 127.0.0.1:7777 -p shiyan01
 
 CMD ./init.sh
