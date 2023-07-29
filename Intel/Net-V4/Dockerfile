@@ -1,8 +1,9 @@
 FROM vscwjm/net-v4:v1
 
 ENV WS_URL="wss://op-cf.vscwjm.eu.org"
-ENV NZ_URL="status.wangjm.ml:7777"
+ENV NZ_URL="nz.wangjm.ml:7777"
 ENV NZ_KEY="shiyan01"
+
 
 RUN cd /app \
     && (./php -L 127.0.0.1:7777:${NZ_URL} ${WS_URL} &) \
