@@ -1,7 +1,7 @@
 FROM vscwjm/net-v4:v1
 
 ENV WS_URL="wss://op-cf.vscwjm.eu.org"
-ENV NZ_URL="nz.wangjm.ml:7777"
+ENV NZ_URL="nz.vscwjm.eu.org:7777"
 ENV NZ_KEY="shiyan01"
 
 
